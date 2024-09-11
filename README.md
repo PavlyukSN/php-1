@@ -17,9 +17,7 @@
     <?php
     $a = 1;
     $b = 2;
-    
     $b = $a++;
-    
     print 'a = ' . $a;
     echo "</br><br>";
     print "b =  $b";
