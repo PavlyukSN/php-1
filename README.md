@@ -1,23 +1,23 @@
 1.	В контейнере с PHP CLI поменяйте версию PHP с 8.2 на 7.4. Изменится ли вывод?
-    <?php
-    $a = 5;
-    $b = '05';
-    var_dump($a == $b);
-    var_dump((int)'012345');
-    var_dump((float)123.0 === (int)123.0);
-    var_dump(0 == 'hello, world');
-    ?>
-    8.2
-    bool(true) int(12345) bool(false) bool(false)
-    7.4
-    bool(true) int(12345) bool(false) bool(true)
-    Вывод изменился так как в 7 версии строка преобразовалась в число.
+<?php
+$a = 5;
+$b = '05';
+var_dump($a == $b);
+var_dump((int)'012345');
+var_dump((float)123.0 === (int)123.0);
+var_dump(0 == 'hello, world');
+?>
+8.2
+bool(true) int(12345) bool(false) bool(false)
+7.4
+bool(true) int(12345) bool(false) bool(true)
+Вывод изменился так как в 7 версии строка преобразовалась в число.
   	
 3.	Используя только две числовые переменные, поменяйте их значение местами. Например, если a = 1, b = 2, надо, чтобы получилось: b = 1, a = 2. Дополнительные переменные, функции и конструкции типа list() использовать нельзя.
-    <?php
-    $a = 1;
-    $b = 2;
-    $b = $a++;
-    print 'a = ' . $a;
-    echo "</br><br>";
-    print "b =  $b";
+<?php
+$a = 1;
+$b = 2;
+$b = $a++;
+print 'a = ' . $a;
+echo "</br><br>";
+print "b =  $b";
